@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
-    <title>Note</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteAdd</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 onclick="document.getElementById('btn').click();" class="heading">Note Ekle</h1>
-    <div class="app" id="note_parent_div">
-      <button class="note_btn" id="btn">Not Bulunamaktadır...</button>
-    </div>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">NoteAdd</p>
+          <h1 class="heading">Notlarını daha ferah bir panoda yönet.</h1>
+          <p class="hero-text">
+            Hızlıca ekle, renkleri kişiselleştir ve aklındaki her şeyi tek ekranda tut.
+          </p>
+        </div>
+        <button class="add-note-hero" id="hero_add_btn" type="button">+ Yeni Not</button>
+      </section>
+
+      <section class="board-panel">
+        <div class="board-top">
+          <div>
+            <h2 class="board-title">Not Panon</h2>
+            <p class="board-subtitle" id="note_status">Henüz not yok. İlk notunu ekle.</p>
+          </div>
+          <div class="count-badge"><span id="note_count">0</span> not</div>
+        </div>
+
+        <div class="app" id="note_parent_div">
+          <button class="note_btn" id="btn" type="button">+ İlk notunu oluştur</button>
+        </div>
+      </section>
+    </main>
     <script src="style.js"></script>
   </body>
 </html>
